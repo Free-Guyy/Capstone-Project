@@ -1,0 +1,173 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Employee</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+  <link rel="stylesheet" href="jquery.datetimepicker.min.css" />
+</head>
+
+<body>
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white">
+      <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+      <div class="logo">
+        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+          CT
+        </a>
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Employee
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+          <ul class="nav">
+              <li class="nav-item active  ">
+                  <a class="nav-link" href="#0">
+                      <i class="material-icons">dashboard</i>
+                      <p>Apply for transport</p>
+                  </a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="./Current bookings.html">
+                      <i class="material-icons">content_paste</i>
+                      <p>Current bookings</p>
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:;">
+                  <i class="material-icons">notifications</i> Notifications
+                </a>
+              </li>
+              <!-- your navbar here -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+          <h3>
+              <b>Select the date and time of travel</b>
+          </h3>
+          <script src="jquery.js"></script></script>
+          <script src="jquery.datetimepicker.full.js"></script></script>
+          <input id="datetime"/>
+          <script>
+              $("#datetime").datetimepicker();
+          </script>
+            <h3>
+                <b>Select Pick up and drop location</b>
+            </h3>
+          <form action="/action_page.php">
+              <label for="Pick UP location">Pick UP Location: </label>
+              <input type="text" id="pick up" name="Pick UP Location"><br>
+              <input type="button" value="OK">
+          </form>
+          <form action="/action_page.php">
+              <label for="Drop location">Drop Location: </label>
+              <input type="text" id="drop" name="Drop Location"><br>
+              <input type="button" value="OK">
+          </form>
+          <h3>
+              <b>Select Vehicle</b>
+          </h3>
+          <div class="container_12">
+              <div class="grid_12">
+                  <h3>Economy</h3>
+              </div>
+              <div class="clear"></div>
+              <div class="gallery">
+                  <div class="grid_4"><a href="images/big1.jpg" class="gal"><img src="images/page3_img1.jpg" alt=""></a></div>
+                  <div class="grid_4"><a href="images/big2.jpg" class="gal"><img src="images/page3_img2.jpg" alt=""></a></div>
+                  <div class="grid_4"><a href="images/big3.jpg" class="gal"><img src="images/page3_img3.jpg" alt=""></a></div>
+              </div>
+              <div class="grid_12">
+                  <h3>Standard</h3>
+              </div>
+              <div class="clear"></div>
+              <div class="gallery">
+                  <div class="grid_4"><a href="images/big4.jpg" class="gal"><img src="images/page3_img4.jpg" alt=""></a></div>
+                  <div class="grid_4"><a href="images/big5.jpg" class="gal"><img src="images/page3_img5.jpg" alt=""></a></div>
+                  <div class="grid_4"><a href="images/big6.jpg" class="gal"><img src="images/page3_img6.jpg" alt=""></a></div>
+              </div>
+              <div class="grid_12">
+                  <h3>Lux</h3>
+              </div>
+              <div class="clear"></div>
+              <div class="gallery">
+                  <div class="grid_4"><a href="images/big7.jpg" class="gal"><img src="images/page3_img7.jpg" alt=""></a></div>
+                  <div class="grid_4"><a href="images/big8.jpg" class="gal"><img src="images/page3_img8.jpg" alt=""></a></div>
+                  <div class="grid_4"><a href="images/big9.jpg" class="gal"><img src="images/page3_img9.jpg" alt=""></a></div>
+              </div>
+              <div class="clear"></div>
+              <h4>Select vehicle</h4>
+              <form action="/action_page.php">
+                  <label for="vehicles">Choose the Vehicle:</label>
+                  <select id="vehicles" name="vehicles">
+                      <option value="economy1">economy1</option>
+                      <option value="economy2">economy2</option>
+                      <option value="economy3">economy3</option>
+                      <option value="standard1">standard1</option>
+                      <option value="standard2">standard2</option>
+                      <option value="standard3">standard3</option>
+                      <option value="Luxury1">Luxury1</option>
+                      <option value="Luxury2">Luxury2</option>
+                      <option value="Luxury3">Luxury3</option>
+                  </select>
+                  <input type="button"  value="OK">
+              </form>
+
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="<!--write our main website--!">
+                  Employee transport Management system
+                </a>
+              </li>
+            </ul>
+          </nav>
+            <a href="<!--write our main website--!>" target="_blank">Employee transport Management system
+          </div>
+          <!-- your footer here -->
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
