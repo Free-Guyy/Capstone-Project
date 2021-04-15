@@ -26,3 +26,9 @@ a.gal:hover img {
 	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
 
 }
+.dark-mode{
+    --clr-background:#263238;
+    --clr-base:black;
+    --clr-primary:#69f0ae;
+    --clr-gray:#e0f7fa;
+}

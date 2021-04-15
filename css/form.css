@@ -195,10 +195,12 @@
 }
 
 @media only screen and (max-width: 995px) {
-
-#form {
+.dark-mode{
+    --clr-background:#263238;
+    --clr-base:black;
+    --clr-primary:#69f0ae;
+    --clr-gray:#e0f7fa;
 }
-
 
 #form label {
 	float: none !important;	

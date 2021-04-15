@@ -66,9 +66,7 @@ nav{ position:relative;padding: 0px 0 0 0;}
 	display: block;
 }
 
-.sf-menu>li.current>a.sf-with-ul:after, 
-.sf-menu>li.sfHover>a.sf-with-ul:after {
-}
+
  
 .sf-menu>li>ul>li>a.sf-with-ul:after {
 	content: '';
@@ -133,8 +131,6 @@ nav{ position:relative;padding: 0px 0 0 0;}
 	margin-top: 12px;
 }
 
-.sf-menu li ul li+li a {
-}
 
 
 .sf-menu li ul li a{
@@ -176,8 +172,6 @@ nav{ position:relative;padding: 0px 0 0 0;}
 @media only screen and (max-width: 995px) {
 
 
-	.sf-menu>li{
-	}
 
 	.sf-menu li.sfHover li.sfHover ul{
 		left: 155px;

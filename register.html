@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login and Registration form example</title>
+<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+ 
+<body bgcolor="#E6E6FA">
+ 
+<form name="regi" action="register1.jsp" method="post">
+<h2>Registration Form</h2>
+ 
+<label for="r1" id="fn">First Name :</label>
+<input type="text" name="fname" id="r1" required placeholder="enter your firstname"><br/>
+ 
+<label  for="r2" id="ln">Last Name :</label>
+<input type="text" name="lname" id="r2" required placeholder="enter your lastname"><br/>
+ 
+<label  for="r3" id="un">Username :</label>
+<input type="text" name="uname" id="r3" required placeholder="enter your username"><br/>
+ 
+<label  for="r4" id="pwd">Password :</label>
+<input type="password" name="pass" id="r4" required placeholder="enter your password"><br/>
+ 
+<label  for="r5" id="em">Email :</label>
+<input type="text" name="email" id="r5" required placeholder="enter your email"><br/>
+ 
+<label  for="r6" id="mn">Mobile No :</label>
+<input type="text" name="mno" id="r6" required placeholder="Enter your Mobile Number"><br/>
+<div>
+<label  for="r7" id="ge" required>gender :
+ <input type="radio" id="male" name="gender" value="male">&nbsp
+<label for="male">Male</label><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label></label></div>
+
+<label  for="r8" id="cn" >Company Name :</label>
+<input type="text" name="cname" id="r8" required placeholder="Enter Your Comapny Name"><br/>
+ 
+<br/><br/>
+ 
+<button><a href="employee/Employee.html" type="submit" value="Submit" id="button">Register</a></button>
+<button><a href="login.html">Login</a></button>
+ 
+</form>
+ 
+<script type="text/javascript">
+function save(){
+var user = document.getElementById("user").value;
+var pwd = document.getElementById("pwd").value;
+alert("username"+user+"password"+pwd);
+}
+</script>
+</body>
+</html>
